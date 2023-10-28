@@ -1,0 +1,15 @@
+command /day:
+    permission: daynight.sk
+    permission message: &cDu darfst das nicht!
+    trigger:
+        send "&bSERVER &r| You set the time to 12:00." to player
+        wait 7 ticks
+        set time to 12:00
+
+command /night:
+    permission: daynight.sk
+    permission message: &cDu darfst das nicht!
+    trigger:
+        send "&bSERVER &r| You set the time to 00:00." to player
+        wait 7 ticks
+        set time to 00:00
